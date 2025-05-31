@@ -1,0 +1,34 @@
+.display-tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the task rows horizontally */
+}
+
+.task-row {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  background: linear-gradient(to right, #d4006c, #1e3c72);
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 15px;
+}
+
+.my-task {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.my-btn {
+  background-color: rgba(186, 10, 110, 0.619);
+  color: black;
+  margin-left: 10px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

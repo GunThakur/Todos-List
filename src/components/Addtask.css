@@ -1,0 +1,33 @@
+div .add-task {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 65vh;
+    flex-direction: column;
+    /* margin-top: 189PX; */
+}
+div .btn-danger{
+    width: 10%;
+    font-size: 1.5rem;
+    margin-top: 12px;
+}
+
+.add-task input[type="text"] {
+    width: 40%;
+    color: white;
+    padding: 12px 18px;
+    border: 2px solid #a3a3a3;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #000b16;
+}
+
+.add-task input[type="text"]:focus {
+    border-color: #f6ff00;
+    color: white;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.15);
+    background: #150000;
+}
