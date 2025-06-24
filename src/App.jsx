@@ -24,7 +24,6 @@ function App() {
   },[taskList])
     return (
    <div>
-    <h1>Hello World</h1>
     <Navbar onSearch = {setSearchQuery}/>
     <AddTask taskList={taskList}setTaskList={setTaskList}/>
     <DisplayTasks taskList={taskList} searchResults = {searchQuery}/>
