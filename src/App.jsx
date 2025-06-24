@@ -10,6 +10,7 @@ import DisplayTasks from './components/DisplayTasks'
 function App() {
   const [taskList, setTaskList] = useState([])
   const [searchQuery, setSearchQuery] = useState("");
+  console.log("taskList", taskList)
   useEffect(()=>{
     const tasks = localStorage.getItem("taskList")
     if(tasks){
@@ -22,11 +23,12 @@ function App() {
     }
   },[taskList])
     return (
-   <>
+   <div>
+    <h1>Hello World</h1>
     <Navbar onSearch = {setSearchQuery}/>
     <AddTask taskList={taskList}setTaskList={setTaskList}/>
     <DisplayTasks taskList={taskList} searchResults = {searchQuery}/>
-   </>
+   </div>
   )
 }
 
